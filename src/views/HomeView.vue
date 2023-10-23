@@ -13,4 +13,5 @@ import TheWelcome from '../components/TheWelcome.vue'
 import IconosRedesSociales from '../components/IconosRedesSociales.vue';
 </script>
 
-<style></style>
+<style>
+</style>
