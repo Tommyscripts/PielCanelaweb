@@ -1,6 +1,6 @@
 !<template>
     <div>
-        P
+      <p class="fuente"> P</p>  
     </div>
 </template>
 
@@ -8,6 +8,8 @@
 
 </script>
 
-<style lang="scss" scoped>
-
+<style  scoped>
+.fuente{
+    font-size: 2vh;
+}
 </style>

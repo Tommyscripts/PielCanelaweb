@@ -1,7 +1,6 @@
 <template>
-    <v-app>
-      <v-main>
-        <v-container class="d-flex align-center text-center">
+
+          <div class="d-flex align-center text-center">
           <div class="centered-text">
             <p>Próximamente</p>
             <v-divider></v-divider>
@@ -13,17 +12,15 @@
             <div class="bottom-text">
               Pronto podréis explorar una experiencia completamente nueva y mejorada.
               <v-divider></v-divider>
+              <br>
               ¡Mantente atento para descubrir nuestras novedades!
             </div>
           </div>
-        </v-container>
-      </v-main>
-    </v-app>
+        </div>
   </template>
   
   <script>
   export default {
-    // Tu lógica de componentes aquí
   };
   </script>
   
