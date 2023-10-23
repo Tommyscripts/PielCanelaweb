@@ -10,7 +10,6 @@
       <v-divider></v-divider>
       <div class="bottom-text">
         Pronto podréis explorar una experiencia completamente nueva y mejorada.
-        <v-divider></v-divider>
         <br>
         ¡Mantente atento para descubrir nuestras novedades!
       </div>
