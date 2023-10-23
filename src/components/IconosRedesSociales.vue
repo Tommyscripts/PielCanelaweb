@@ -1,13 +1,21 @@
-!<template>
-    <div>
-
-    </div>
+<template>
+ <v-row>
+     <v-col>
+       
+     </v-col>
+     <v-col>
+        
+    </v-col>
+    <v-col>
+        
+    </v-col>
+ </v-row>
 </template>
 
-<script setup>
+<script >
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
