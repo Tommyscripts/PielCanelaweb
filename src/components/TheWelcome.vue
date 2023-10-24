@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-center text-center">
+  <div class="d-flex align-center text-center full-width">
     <div class="centered-text">
       <p>Próximamente</p>
       <v-divider></v-divider>
@@ -23,6 +23,9 @@ export default {
 </script>
   
 <style scoped>
+.full-width {
+  width: 100%;
+}
 .centered-text {
   text-align: center;
   display: flex;
