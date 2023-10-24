@@ -26,6 +26,7 @@ export default {
 .full-width {
   width: 100%;
 }
+
 .centered-text {
   text-align: center;
   display: flex;

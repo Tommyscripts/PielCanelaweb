@@ -18,7 +18,7 @@ export default {
   components: {
     Navbar,
     TheWelcome
-},
+  },
   data() {
     return {
       currentTab: 'tab1',

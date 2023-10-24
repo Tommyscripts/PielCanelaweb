@@ -35,14 +35,16 @@ export default {
 
 <style scoped>
 .app {
-  height: 100vh; /* Altura de la ventana del navegador */
+  height: 100vh;
+  /* Altura de la ventana del navegador */
   width: 100vh;
   background-color: black;
 }
 
 .content {
   padding: 20px;
-  height: 100%; /* Asegura que el contenido ocupe la pantalla completa */
+  height: 100%;
+  /* Asegura que el contenido ocupe la pantalla completa */
   width: 100%;
 }
 </style>

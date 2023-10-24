@@ -20,17 +20,19 @@ import IconosRedesSociales from '../components/IconosRedesSociales.vue';
 
 
 <style scoped>
-.tamano{
+.tamano {
   height: 100%;
   width: 100%;
   background-color: black;
 }
+
 .d-flex {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
 }
+
 .text-center {
-  text-align: center; 
+  text-align: center;
 }
 </style>

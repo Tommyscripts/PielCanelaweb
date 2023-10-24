@@ -1,6 +1,6 @@
 <template>
   <div>
- 
+
     <v-row>
       <v-col class="icon-col">
         <v-btn>
@@ -9,7 +9,7 @@
         <br>
       </v-col>
     </v-row>
-    
+
     <v-row>
       <v-col class="icon-col">
         <v-btn>
@@ -18,7 +18,7 @@
         <br>
       </v-col>
     </v-row>
-    
+
     <v-row>
       <v-col class="icon-col">
         <v-btn>
@@ -27,7 +27,7 @@
         <br>
       </v-col>
     </v-row>
-    
+
     <v-row>
       <v-col class="icon-col">
         <v-btn>
