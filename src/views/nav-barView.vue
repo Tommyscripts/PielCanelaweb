@@ -5,7 +5,7 @@
       <div v-if="currentTab === 'tab1'">
         <TheWelcome />
       </div>
-      <div v-if="currentTab === 'tab2'">Contenido de la Pestaña 2</div>
+      <div v-if="currentTab === 'tab2'"> <Identidad/> </div>
       <div v-if="currentTab === 'tab3'">Contenido de la Pestaña 3</div>
     </div>
   </div>
@@ -14,6 +14,7 @@
 <script>
 import TheWelcome from './HomeView.vue';
 import Navbar from '@/components/Navbar.vue';
+import Identidad from'./IdentidadView.vue';
 
 export default {
   components: {
