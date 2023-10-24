@@ -3,12 +3,13 @@
     <v-row>
       <v-col class="icon-col">
         <v-btn>
-          <a href="https://www.instagram.com" target="_blank"><v-icon> Prueba 1</v-icon></a>
+          <a href="https://www.instagram.com" target="_blank">
+            <v-icon>mdi-instagram</v-icon>
+          </a>
         </v-btn>
         <br>
       </v-col>
     </v-row>
-
     <v-row>
       <v-col class="icon-col">
         <v-btn>
@@ -56,7 +57,7 @@ export default {
 </script>
 
 <style>
-.mover{
+.mover {
   margin-right: 8vh;
 }
 </style>
