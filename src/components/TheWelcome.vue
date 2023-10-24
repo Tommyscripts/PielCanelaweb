@@ -44,7 +44,7 @@ export default {
 
 .playfair-display .coming {
   position: relative;
-  margin-right: -0.1em;
+  
 }
 
 .playfair-display .soon {
@@ -57,5 +57,9 @@ export default {
   margin-top: 5em;
   /* Ajusta el margen superior según tus preferencias */
 }
+body {
+  overflow-x: hidden;
+}
+
 </style>
   

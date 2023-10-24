@@ -18,7 +18,7 @@ export default {
   components: {
     Navbar,
     TheWelcome
-  },
+},
   data() {
     return {
       currentTab: 'tab1',
@@ -35,13 +35,15 @@ export default {
 <style scoped>
 .app {
   height: 100vh;
-  width: 100vh;
+  width: 180vh;
   background-color: black;
 }
 
 .content {
-  padding: 20px;
   height: 100%;
   width: 100%;
+}
+body {
+  overflow-x: hidden;
 }
 </style>
