@@ -30,6 +30,7 @@ import IconosRedesSociales from '../components/IconosRedesSociales.vue';
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .text-center {

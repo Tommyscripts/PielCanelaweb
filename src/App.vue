@@ -34,16 +34,16 @@ export default {
 
 <style scoped>
 .app {
-  height: 100vh;
-  width: 180vh;
+  height: 99vh; /* Altura de la ventana del navegador */
+  width: 99vw; /* Ancho de la ventana del navegador */
   background-color: black;
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina relleno predeterminado */
+  overflow: hidden; /* Evita barras de desplazamiento */
 }
 
 .content {
-  height: 100%;
+  height: 100%; /* Asegura que el contenido ocupe la pantalla completa */
   width: 100%;
-}
-body {
-  overflow-x: hidden;
 }
 </style>

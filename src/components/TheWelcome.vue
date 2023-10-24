@@ -40,6 +40,7 @@ export default {
   font-family: 'Playfair Display', serif;
   font-size: 10vh;
   line-height: 1em;
+  color:rgb(255, 255, 255);
 }
 
 .playfair-display .coming {
@@ -56,9 +57,6 @@ export default {
 .bottom-text {
   margin-top: 5em;
   /* Ajusta el margen superior según tus preferencias */
-}
-body {
-  overflow-x: hidden;
 }
 
 </style>
