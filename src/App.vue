@@ -44,8 +44,8 @@ export default {
 
 <style scoped>
 .app {
-  height: 99vh;
-  width: 99vw;
+  height: 100vh;
+  width: 100vw;
   background-color: black;
   margin: 0;
   padding: 0;

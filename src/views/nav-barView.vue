@@ -38,7 +38,7 @@ export default {
 .app {
   height: 100vh;
   /* Altura de la ventana del navegador */
-  width: 100vh;
+  width: 100%;
   background-color: black;
 }
 
