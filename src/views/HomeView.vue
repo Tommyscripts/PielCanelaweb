@@ -1,5 +1,5 @@
 <template>
-  <v-container class="d-flex">
+  <div class="d-flex tamano">
     <v-col cols="2">
       <LogoPielCanela />
     </v-col>
@@ -9,7 +9,7 @@
     <v-col cols="2">
       <IconosRedesSociales />
     </v-col>
-  </v-container>
+  </div>
 </template>
 
 <script setup>
@@ -19,13 +19,18 @@ import IconosRedesSociales from '../components/IconosRedesSociales.vue';
 </script>
 
 
-<style>
+<style scoped>
+.tamano{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
 .d-flex {
   display: flex;
-  justify-content: space-between; /* Espacio uniforme entre los componentes */
-  align-items: center; /* Alinea verticalmente en el centro */
+  justify-content: space-between; 
+  align-items: center; 
 }
 .text-center {
-  text-align: center; /* Alineación horizontal en el centro */
+  text-align: center; 
 }
 </style>
