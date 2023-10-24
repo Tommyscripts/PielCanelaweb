@@ -1,6 +1,5 @@
 <template>
-  <div>
- 
+  <div class="mover">
     <v-row>
       <v-col class="icon-col">
         <v-btn>
@@ -9,7 +8,7 @@
         <br>
       </v-col>
     </v-row>
-    
+
     <v-row>
       <v-col class="icon-col">
         <v-btn>
@@ -18,7 +17,7 @@
         <br>
       </v-col>
     </v-row>
-    
+
     <v-row>
       <v-col class="icon-col">
         <v-btn>
@@ -27,7 +26,7 @@
         <br>
       </v-col>
     </v-row>
-    
+
     <v-row>
       <v-col class="icon-col">
         <v-btn>
@@ -55,3 +54,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.mover{
+  margin-right: 8vh;
+}
+</style>

@@ -1,27 +1,23 @@
 <template>
   <div class="d-flex align-center text-center full-width">
     <div class="centered-text">
-      <p>Próximamente</p>
+      <p>Contacto</p>
       <v-divider></v-divider>
-      <div class="playfair-display">
-        <span class="coming">Coming</span>
-        <span class="soon">Soon</span>
-      </div>
+      <a class="email-link" href="mailto:hola@pielcaneladesign.com">
+        <div class="playfair-display">
+          hola@pielcaneladesign.com
+        </div>
+      </a>
       <v-divider></v-divider>
       <div class="bottom-text">
-        Pronto podréis explorar una experiencia completamente nueva y mejorada.
+        912516439
         <br>
-        ¡Mantente atento para descubrir nuestras novedades!
+        Lunes a viernes de 10am-8pm
       </div>
     </div>
   </div>
 </template>
-  
-<script>
-export default {
-};
-</script>
-  
+
 <style scoped>
 .full-width {
   width: 100%;
@@ -34,18 +30,18 @@ export default {
   justify-content: center;
   height: 100vh;
   font-family: 'Raleway', sans-serif;
+  font-size: 3vh;
 }
 
 .playfair-display {
   font-family: 'Playfair Display', serif;
   font-size: 10vh;
   line-height: 1em;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .playfair-display .coming {
   position: relative;
-  
 }
 
 .playfair-display .soon {
@@ -54,10 +50,9 @@ export default {
   top: 0.56em;
 }
 
-.bottom-text {
-  margin-top: 5em;
-  /* Ajusta el margen superior según tus preferencias */
+.email-link {
+  text-decoration: none; /* Quita la subraya del enlace */
+  color: inherit; /* Usa el color de texto predeterminado */
+  cursor: pointer;
 }
-
 </style>
-  

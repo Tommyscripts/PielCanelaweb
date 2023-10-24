@@ -1,10 +1,10 @@
-<template>
-  <div class="d-flex tamano">
+!<template>
+    <div class="d-flex tamano">
     <v-col cols="2">
       <LogoPielCanela />
     </v-col>
     <v-col cols="8">
-      <TheWelcome />
+        <Identidad />
     </v-col>
     <v-col cols="2">
       <IconosRedesSociales />
@@ -13,11 +13,10 @@
 </template>
 
 <script setup>
+import Identidad from '../components/Identidad.vue';
 import LogoPielCanela from '../components/LogoPielCanela.vue';
-import TheWelcome from '../components/TheWelcome.vue';
 import IconosRedesSociales from '../components/IconosRedesSociales.vue';
 </script>
-
 
 <style scoped>
 .tamano {
