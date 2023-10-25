@@ -2,13 +2,13 @@
   <div class="d-flex align-center text-center full-width">
     <div class="centered-text">
       <p>Contacto</p>
-      <v-divider></v-divider>
+      <br>
       <a class="email-link" href="mailto:hola@pielcaneladesign.com">
         <div class="playfair-display">
           hola@pielcaneladesign.com
         </div>
       </a>
-      <v-divider></v-divider>
+      <br>
       <div class="bottom-text">
         912516439
         <br>
