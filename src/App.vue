@@ -2,6 +2,7 @@
   <v-main>
     <div class="app">
       <Navbar @tab-change="changeTab" />
+      <img src="./assets/slidemouse.gif" alt="GIF" class="global-gif" />
       <div class="content">
         <div v-if="currentTab === 'tab1'">
           <TheWelcome />
@@ -55,5 +56,13 @@ export default {
 .content {
   height: 100%;
   width: 100%;
+}
+
+.global-gif {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2vh; /* Ajusta el tamaño del GIF según tus preferencias */
 }
 </style>
