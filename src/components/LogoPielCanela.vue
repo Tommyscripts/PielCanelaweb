@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import Logo from './icons/pielcanela_rebranding-08.png'
+import Logo from './icons/pielcanela_rebranding-07.png'
 </script>
 <style>
 .p{

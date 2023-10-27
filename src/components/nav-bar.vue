@@ -62,7 +62,7 @@ export default {
   height: 10px;
   background-color: #827d7d;
   border-radius: 50%;
-  margin: 0 10px;
+  margin: 2.2rem 10px 0; /* Agregar el margen superior */
   cursor: pointer;
   transition: background-color 0.3s;
 }

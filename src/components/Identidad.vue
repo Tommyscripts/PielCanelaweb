@@ -14,8 +14,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 10vh;
   line-height: 1em;
   color: rgb(255, 255, 255);
   height: 100vh;
