@@ -64,5 +64,11 @@ export default {
   padding-left: 9em;
   /* Ajusta el margen superior según tus preferencias */
 }
+
+/* Media query para pantallas con un ancho máximo de 800px (ajustado para dispositivos móviles) */
+@media (max-width: 800px) {
+  .mover {
+    padding-left: 0;
+  }
+}
 </style>
-  
