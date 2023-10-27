@@ -25,6 +25,7 @@
   </div>
 </template>
 
+
 <style scoped>
 .full-width {
   width: 100%;
@@ -54,7 +55,7 @@
 }
 
 .playfair-display {
-  font-family: 'Playfair Display', italic;
+  font-family: 'PlayfairDisplay-Bolditalic', italic;
   font-size: 10vh;
   line-height: 1em;
   color: rgb(255, 255, 255);
