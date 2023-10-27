@@ -1,14 +1,14 @@
 <template>
   <div class="d-flex align-center text-center full-width">
     <div class="centered-text">
-      <p class="mover">Próximamente</p>
+      <p class="mover" style="font-style: italic;">Próximamente</p>
       <v-divider></v-divider>
       <div class="playfair-display">
-        <span class="coming">Coming</span>
-        <span class="soon">Soon</span>
+        <span class="coming" style="font-style: italic;">Coming</span>
+        <span class="soon" style="font-style: italic;">Soon</span>
       </div>
       <v-divider></v-divider>
-      <div class="bottom-text">
+      <div class="bottom-text" style="font-style: italic;">
         Pronto podréis explorar una experiencia completamente nueva y mejorada.
         <br>
         ¡Mantente atento para descubrir nuestras novedades!
@@ -37,13 +37,13 @@ export default {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway';
   font-size: 3vh;
   padding-right: 5em;
 }
 
 .playfair-display {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display';
   font-size: 15vh;
   line-height: 1em;
   color: rgb(255, 255, 255);
@@ -55,8 +55,8 @@ export default {
 
 .playfair-display .soon {
   position: relative;
-  margin-left: -2.5em;
-  top: 0.59em;
+  margin-left: -2.52em;
+  top: 0.55em;
 }
 
 .bottom-text {
