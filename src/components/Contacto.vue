@@ -14,6 +14,11 @@
         <br>
         Lunes a viernes de 10am-8pm
       </div>
+      <div class="mobile-icons">
+        <v-icon>mdi-facebook</v-icon>
+        <v-icon>mdi-twitter</v-icon>
+        <v-icon>mdi-instagram</v-icon>
+      </div>
     </div>
   </div>
 </template>
@@ -40,19 +45,23 @@
   color: rgb(255, 255, 255);
 }
 
-.playfair-display .coming {
-  position: relative;
-}
-
-.playfair-display .soon {
-  position: relative;
-  margin-left: -2.4em;
-  top: 0.56em;
-}
-
 .email-link {
-  text-decoration: none; /* Quita la subraya del enlace */
-  color: inherit; /* Usa el color de texto predeterminado */
+  text-decoration: none;
+  color: inherit;
   cursor: pointer;
+}
+
+.mobile-icons {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .mobile-icons {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>
