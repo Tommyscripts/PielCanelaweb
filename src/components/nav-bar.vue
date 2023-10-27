@@ -6,7 +6,6 @@
       :key="tab"
       @click="changeTab(tab)"
       :class="{ 'active': currentTab === tab }"
-      tabindex="0" 
     ></div>
   </div>
 </template>
@@ -15,13 +14,40 @@
 export default {
   data() {
     return {
-      tabs: ['tab1', 'tab2', 'tab3'], // Agrega aquí todas tus pestañas
+      tabs: ['tab1', 'tab2', 'tab3'],
+      currentTab: 'tab1', // Añade la pestaña actual
     };
   },
   methods: {
     changeTab(tab) {
+      this.currentTab = tab;
       this.$emit('tab-change', tab);
     },
+  },
+  mounted() {
+    // Agregar el evento de escucha para el scroll del ratón
+    window.addEventListener('wheel', this.handleMouseWheel);
+  },
+  beforeDestroy() {
+    // Eliminar el evento de escucha al destruir el componente
+    window.removeEventListener('wheel', this.handleMouseWheel);
+  },
+  handleMouseWheel(event) {
+    if (event.deltaY > 0) {
+      // Desplazamiento hacia abajo (scroll hacia arriba)
+      // Cambia a la siguiente pestaña
+      const currentIndex = this.tabs.indexOf(this.currentTab);
+      if (currentIndex < this.tabs.length - 1) {
+        this.changeTab(this.tabs[currentIndex + 1]);
+      }
+    } else if (event.deltaY < 0) {
+      // Desplazamiento hacia arriba (scroll hacia abajo)
+      // Cambia a la pestaña anterior
+      const currentIndex = this.tabs.indexOf(this.currentTab);
+      if (currentIndex > 0) {
+        this.changeTab(this.tabs[currentIndex - 1]);
+      }
+    }
   },
 };
 </script>
@@ -38,18 +64,18 @@ export default {
 .menu-icon {
   width: 10px;
   height: 10px;
-  background-color: #827d7d; /* Establece el color gris predeterminado */
+  background-color: #827d7d;
   border-radius: 50%;
   margin: 0 10px;
   cursor: pointer;
-  transition: background-color 0.3s; /* Agrega una transición para suavizar el cambio de color */
+  transition: background-color 0.3s;
 }
 
 .menu-icon:focus {
-  background-color: #fff; /* Establece el color blanco para el enfoque */
+  background-color: #fff;
 }
 
 .active {
-  background-color: #fff; /* Establece el color blanco para la pestaña activa */
+  background-color: #fff;
 }
 </style>

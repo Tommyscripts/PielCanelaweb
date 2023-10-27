@@ -5,8 +5,12 @@
       <div v-if="currentTab === 'tab1'">
         <TheWelcome />
       </div>
-      <div v-if="currentTab === 'tab2'"> <Identidad/> </div>
-      <div v-if="currentTab === 'tab3'">Contenido de la Pestaña 3</div>
+      <div v-if="currentTab === 'tab2'">
+        <Identidad />
+      </div>
+      <div v-if="currentTab === 'tab3'">
+        <Contacto />
+      </div>
     </div>
   </div>
 </template>
@@ -14,7 +18,8 @@
 <script>
 import TheWelcome from './HomeView.vue';
 import Navbar from '@/components/Navbar.vue';
-import Identidad from'./IdentidadView.vue';
+import Identidad from './IdentidadView.vue';
+import Contacto from './ContactoView.vue'
 
 export default {
   components: {
@@ -47,5 +52,4 @@ export default {
   height: 100%;
   /* Asegura que el contenido ocupe la pantalla completa */
   width: 100%;
-}
-</style>
+}</style>

@@ -54,8 +54,8 @@ export default {
 
 .playfair-display .soon {
   position: relative;
-  margin-left: -2.4em;
-  top: 0.56em;
+  margin-left: -2.82em;
+  top: 0.59em;
 }
 
 .bottom-text {
