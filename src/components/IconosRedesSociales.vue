@@ -8,6 +8,7 @@
           </a>
         </v-btn>
         <br>
+        <br>
       </v-col>
     </v-row>
     <v-row>
@@ -17,6 +18,7 @@
             <svg-icon type="mdi" :path="linkedin"></svg-icon>
           </a>
         </v-btn>
+        <br>
         <br>
       </v-col>
     </v-row>
@@ -28,6 +30,7 @@
             <svg-icon type="mdi" :path="facebook"></svg-icon>
           </a>
         </v-btn>
+        <br>
         <br>
       </v-col>
     </v-row>
@@ -61,10 +64,10 @@ export default {
   },
   data() {
     return {
-       instagram: mdiInstagram,
-       whatsapp: mdiWhatsapp,
-       facebook: mdiFacebook,
-       linkedin: mdiLinkedin,
+      instagram: mdiInstagram,
+      whatsapp: mdiWhatsapp,
+      facebook: mdiFacebook,
+      linkedin: mdiLinkedin,
     }
   },
   methods: {
