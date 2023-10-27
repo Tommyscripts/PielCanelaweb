@@ -3,7 +3,19 @@
     <v-row>
       <v-col class="icon-col">
         <v-btn>
-          <a href="https://www.instagram.com" target="_blank"><v-icon> Prueba 1</v-icon></a>
+          <a href="https://www.instagram.com" target="_blank">
+            <svg-icon type="mdi" :path="instagram"></svg-icon>
+          </a>
+        </v-btn>
+        <br>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col class="icon-col">
+        <v-btn>
+          <a href="https://www.linkedin.com" target="_blank">
+            <svg-icon type="mdi" :path="linkedin"></svg-icon>
+          </a>
         </v-btn>
         <br>
       </v-col>
@@ -12,7 +24,9 @@
     <v-row>
       <v-col class="icon-col">
         <v-btn>
-          <a href="https://www.linkedin.com" target="_blank"><v-icon> Prueba 2</v-icon></a>
+          <a href="https://www.facebook.com" target="_blank">
+            <svg-icon type="mdi" :path="facebook"></svg-icon>
+          </a>
         </v-btn>
         <br>
       </v-col>
@@ -21,24 +35,38 @@
     <v-row>
       <v-col class="icon-col">
         <v-btn>
-          <a href="https://www.facebook.com" target="_blank"><v-icon> Prueba 3</v-icon></a>
-        </v-btn>
-        <br>
-      </v-col>
-    </v-row>
+          <a :href="getWhatsAppLink()" target="_blank">
+            <svg-icon type="mdi" :path="whatsapp"></svg-icon>
 
-    <v-row>
-      <v-col class="icon-col">
-        <v-btn>
-          <a :href="getWhatsAppLink()" target="_blank"><v-icon> Prueba 4</v-icon></a>
+          </a>
         </v-btn>
       </v-col>
     </v-row>
   </div>
 </template>
 
+<script setup>
+import SvgIcon from '@jamescoyle/vue-icon';
+import { mdiInstagram } from '@mdi/js';
+import { mdiWhatsapp } from '@mdi/js';
+import { mdiFacebook } from '@mdi/js';
+import { mdiLinkedin } from '@mdi/js';
+</script>
+
 <script>
 export default {
+  name: "my-component",
+  components: {
+    SvgIcon
+  },
+  data() {
+    return {
+       instagram: mdiInstagram,
+       whatsapp: mdiWhatsapp,
+       facebook: mdiFacebook,
+       linkedin: mdiLinkedin,
+    }
+  },
   methods: {
     getWhatsAppLink() {
       // Número de teléfono (debe incluir el código de país, sin espacios ni caracteres especiales)
@@ -56,7 +84,8 @@ export default {
 </script>
 
 <style>
-.mover{
+.mover {
   margin-right: 8vh;
+  color: white;
 }
 </style>

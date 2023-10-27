@@ -1,19 +1,49 @@
 <template>
   <div class="navbar">
-    <div class="menu-icon" @click="changeTab('tab1')"></div>
-    <div class="menu-icon" @click="changeTab('tab2')"></div>
-    <div class="menu-icon" @click="changeTab('tab3')"></div>
+    <div
+      class="menu-icon"
+      v-for="tab in tabs"
+      :key="tab"
+      @click="changeTab(tab)"
+      :class="{ 'active': currentTab === tab }"
+    ></div>
   </div>
 </template>
 
-
 <script>
-
 export default {
+  data() {
+    return {
+      tabs: ['tab1', 'tab2', 'tab3'],
+      currentTab: 'tab1',
+    };
+  },
   methods: {
     changeTab(tab) {
+      this.currentTab = tab;
       this.$emit('tab-change', tab);
     },
+    handleScroll(event) {
+      if (event.deltaY > 0) {
+        // Desplazamiento hacia abajo (scroll hacia arriba)
+        const currentIndex = this.tabs.indexOf(this.currentTab);
+        if (currentIndex < this.tabs.length - 1) {
+          this.changeTab(this.tabs[currentIndex + 1]);
+        }
+      } else if (event.deltaY < 0) {
+        // Desplazamiento hacia arriba (scroll hacia abajo)
+        const currentIndex = this.tabs.indexOf(this.currentTab);
+        if (currentIndex > 0) {
+          this.changeTab(this.tabs[currentIndex - 1]);
+        }
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener('wheel', this.handleScroll, { passive: true });
+  },
+  beforeDestroy() {
+    window.removeEventListener('wheel', this.handleScroll);
   },
 };
 </script>
@@ -24,22 +54,24 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: #000;
-  /* Color de fondo */
   padding: 10px;
-  /* Espacio alrededor de los puntos */
 }
 
 .menu-icon {
   width: 10px;
-  /* Ancho del punto */
   height: 10px;
-  /* Alto del punto */
-  background-color: #fff;
-  /* Color del punto */
+  background-color: #827d7d;
   border-radius: 50%;
-  /* Hace que el punto sea circular */
   margin: 0 10px;
-  /* Espacio entre los puntos */
   cursor: pointer;
-  /* Cambia el cursor al pasar por encima */
-}</style>
+  transition: background-color 0.3s;
+}
+
+.menu-icon:focus {
+  background-color: #fff;
+}
+
+.active {
+  background-color: #fff;
+}
+</style>

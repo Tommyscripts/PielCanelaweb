@@ -1,18 +1,21 @@
 <template>
-  <div class="app">
-    <Navbar @tab-change="changeTab" />
-    <div class="content">
-      <div v-if="currentTab === 'tab1'">
-        <TheWelcome />
-      </div>
-      <div v-if="currentTab === 'tab2'"> 
-        <Identidad />
-      </div>
-      <div v-if="currentTab === 'tab3'">
-        <Contacto />
+  <v-main>
+    <div class="app">
+      <Navbar @tab-change="changeTab" />
+      <img src="./assets/slidemouse.gif" alt="GIF" class="global-gif" />
+      <div class="content">
+        <div v-if="currentTab === 'tab1'">
+          <TheWelcome />
+        </div>
+        <div v-if="currentTab === 'tab2'">
+          <Identidad />
+        </div>
+        <div v-if="currentTab === 'tab3'">
+          <Contacto />
+        </div>
       </div>
     </div>
-  </div>
+  </v-main>
 </template>
 
 <script>
@@ -26,7 +29,7 @@ export default {
     TheWelcome,
     Identidad,
     Contacto
-},
+  },
   data() {
     return {
       currentTab: 'tab1',
@@ -42,16 +45,24 @@ export default {
 
 <style scoped>
 .app {
-  height: 99vh; /* Altura de la ventana del navegador */
-  width: 99vw; /* Ancho de la ventana del navegador */
+  height: 100vh;
+  width: 100vw;
   background-color: black;
-  margin: 0; /* Elimina márgenes predeterminados */
-  padding: 0; /* Elimina relleno predeterminado */
-  overflow: hidden; /* Evita barras de desplazamiento */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .content {
-  height: 100%; /* Asegura que el contenido ocupe la pantalla completa */
+  height: 100%;
   width: 100%;
+}
+
+.global-gif {
+  position: fixed;
+  bottom: 1rem; /* Ajusta la distancia desde la parte inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2vh; /* Ajusta el tamaño del GIF según tus preferencias */
 }
 </style>
