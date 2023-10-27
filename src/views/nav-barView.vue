@@ -52,4 +52,6 @@ export default {
   height: 100%;
   /* Asegura que el contenido ocupe la pantalla completa */
   width: 100%;
-}</style>
+}
+
+</style>
