@@ -23,9 +23,10 @@ export default {
 </script>
   
 <style scoped>
-.mover{
+.mover {
   padding-left: 7em;
 }
+
 .full-width {
   width: 100%;
 }
@@ -45,7 +46,7 @@ export default {
   font-family: 'Playfair Display', serif;
   font-size: 15vh;
   line-height: 1em;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .playfair-display .coming {
@@ -54,7 +55,7 @@ export default {
 
 .playfair-display .soon {
   position: relative;
-  margin-left: -2.82em;
+  margin-left: -2.5em;
   top: 0.59em;
 }
 
@@ -63,6 +64,5 @@ export default {
   padding-left: 9em;
   /* Ajusta el margen superior según tus preferencias */
 }
-
 </style>
   

@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div class="app" @scroll="handleScroll">
     <Navbar @tab-change="changeTab" />
     <div class="content">
       <div v-if="currentTab === 'tab1'">
@@ -35,6 +35,15 @@ export default {
     changeTab(tab) {
       this.currentTab = tab;
     },
+    handleScroll(event) {
+      if (event.deltaY > 0) {
+        // Scroll hacia abajo, cambia a la siguiente pestaña
+        this.changeTab('tab2'); // Cambia a la pestaña siguiente
+      } else {
+        // Scroll hacia arriba, cambia a la pestaña anterior
+        this.changeTab('tab1'); // Cambia a la pestaña anterior
+      }
+    },
   },
 };
 </script>
@@ -45,6 +54,7 @@ export default {
   /* Altura de la ventana del navegador */
   width: 100%;
   background-color: black;
+  overflow-y: scroll; /* Habilita el scroll vertical en la vista */
 }
 
 .content {
@@ -52,6 +62,4 @@ export default {
   height: 100%;
   /* Asegura que el contenido ocupe la pantalla completa */
   width: 100%;
-}
-
-</style>
+}</style>
