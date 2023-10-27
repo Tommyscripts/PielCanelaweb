@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       tabs: ['tab1', 'tab2', 'tab3'],
-      currentTab: 'tab1', // Añade la pestaña actual
+      currentTab: 'tab1',
     };
   },
   methods: {
@@ -23,31 +23,27 @@ export default {
       this.currentTab = tab;
       this.$emit('tab-change', tab);
     },
+    handleScroll(event) {
+      if (event.deltaY > 0) {
+        // Desplazamiento hacia abajo (scroll hacia arriba)
+        const currentIndex = this.tabs.indexOf(this.currentTab);
+        if (currentIndex < this.tabs.length - 1) {
+          this.changeTab(this.tabs[currentIndex + 1]);
+        }
+      } else if (event.deltaY < 0) {
+        // Desplazamiento hacia arriba (scroll hacia abajo)
+        const currentIndex = this.tabs.indexOf(this.currentTab);
+        if (currentIndex > 0) {
+          this.changeTab(this.tabs[currentIndex - 1]);
+        }
+      }
+    },
   },
   mounted() {
-    // Agregar el evento de escucha para el scroll del ratón
-    window.addEventListener('wheel', this.handleMouseWheel);
+    window.addEventListener('wheel', this.handleScroll, { passive: true });
   },
   beforeDestroy() {
-    // Eliminar el evento de escucha al destruir el componente
-    window.removeEventListener('wheel', this.handleMouseWheel);
-  },
-  handleMouseWheel(event) {
-    if (event.deltaY > 0) {
-      // Desplazamiento hacia abajo (scroll hacia arriba)
-      // Cambia a la siguiente pestaña
-      const currentIndex = this.tabs.indexOf(this.currentTab);
-      if (currentIndex < this.tabs.length - 1) {
-        this.changeTab(this.tabs[currentIndex + 1]);
-      }
-    } else if (event.deltaY < 0) {
-      // Desplazamiento hacia arriba (scroll hacia abajo)
-      // Cambia a la pestaña anterior
-      const currentIndex = this.tabs.indexOf(this.currentTab);
-      if (currentIndex > 0) {
-        this.changeTab(this.tabs[currentIndex - 1]);
-      }
-    }
+    window.removeEventListener('wheel', this.handleScroll);
   },
 };
 </script>

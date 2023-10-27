@@ -1,20 +1,33 @@
 <template>
+  <!-- Vista de PC -->
   <div class="d-flex tamano">
-    <v-col cols="2">
+    <v-col cols="2" md="2">
       <LogoPielCanela />
     </v-col>
-    <v-col cols="8">
+    <v-col cols="8" md="4">
       <div class="caja1">
         <TheWelcome />
-        <div class="mobile-icons">
-          <IconosRedesSociales />
-        </div>
       </div>
     </v-col>
-    <v-col cols="2" class="desktop-icons">
+    <v-col cols="2" md="2">
       <IconosRedesSociales />
     </v-col>
   </div>
+
+  <!-- Vista de móvil -->
+    <v-row class="mobile-view">
+      <v-col cols="4">
+        <LogoPielCanela />
+      </v-col>
+
+      <v-col cols="8">
+        <TheWelcome />
+      </v-col>
+
+      <v-col class="mobile-icons" cols="4">
+        <IconosRedesSociales />
+      </v-col>
+    </v-row>
 </template>
 
 <script setup>
@@ -33,6 +46,11 @@ import IconosRedesSociales from '../components/IconosRedesSociales.vue';
   align-items: center;
 }
 
+.mobile-view {
+  display: none;
+  /* Inicialmente ocultamos la vista de móvil */
+}
+
 .d-flex {
   display: flex;
 }
@@ -49,18 +67,5 @@ import IconosRedesSociales from '../components/IconosRedesSociales.vue';
   position: relative;
 }
 
-/* Media query para pantallas con un ancho máximo de 900px (ajustado para dispositivos similares al iPhone SE) */
-@media (max-width: 900px) {
-  .mobile-icons {
-    display: flex;
-    flex-direction: row; /* Mostramos los iconos horizontalmente en la vista móvil */
-    justify-content: center; /* Centramos los iconos horizontalmente en la vista móvil */
-  }
-  .desktop-icons {
-    display: none;
-  }
-  .caja1 {
-    position: relative; /* Aseguramos que 'caja1' siga siendo 'relative' */
-  }
-}
+
 </style>
