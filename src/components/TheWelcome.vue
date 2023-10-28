@@ -49,7 +49,8 @@ export default {
 }
 
 .playfair-display {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
   font-size: 15vh;
   line-height: 1em;
   color: rgb(255, 255, 255);

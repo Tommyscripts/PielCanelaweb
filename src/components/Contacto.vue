@@ -40,12 +40,12 @@
   height: 100vh;
   font-family: 'Raleway', italic;
   font-size: 5vh;
-  padding-left: 2em;
   color: white;
 }
 
 .playfair-display {
-  font-family: 'Playfair Display', italic;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
   font-size: 10vh;
   line-height: 1em;
   color: rgb(255, 255, 255);
