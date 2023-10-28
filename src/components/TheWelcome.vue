@@ -2,12 +2,14 @@
   <div class="d-flex align-center text-center full-width">
     <div class="centered-text">
       <p class="mover" style="font-style: italic;">Próximamente</p>
-      <v-divider></v-divider>
+      <br>
+      <br>
       <div class="playfair-display">
         <span class="coming" style="font-style: italic;">Coming</span>
         <span class="soon" style="font-style: italic;">Soon</span>
       </div>
-      <v-divider></v-divider>
+      <br>
+      <br>
       <div class="bottom-text" style="font-style: italic;">
         Pronto podréis explorar una experiencia completamente nueva y mejorada.
         <br>
@@ -24,7 +26,8 @@ export default {
   
 <style scoped>
 .mover {
-  padding-left: 7em;
+  padding-left: 9em;
+  font-size: 1em;
 }
 
 .full-width {
@@ -32,14 +35,17 @@ export default {
 }
 
 .centered-text {
+  justify-content: space-between;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  font-family: 'Raleway';
-  font-size: 3vh;
+  font-family: 'Raleway', italic;
+  font-size: 3dvh;
   padding-right: 5em;
+  color: white;
+  padding-bottom: 5em; /* Aumentar el margen inferior para un espacio mayor */
 }
 
 .playfair-display {
