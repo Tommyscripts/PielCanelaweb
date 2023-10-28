@@ -1,16 +1,16 @@
 <template>
   <div class="d-flex align-center text-center full-width">
     <div class="centered-text">
-      <p class="mover" style="font-style: italic;">Próximamente</p>
+      <p class="mover" >Próximamente</p>
       <br>
       <br>
       <div class="playfair-display">
-        <span class="coming" style="font-style: italic;">Coming</span>
-        <span class="soon" style="font-style: italic;">Soon</span>
+        <span class="coming" >Coming</span>
+        <span class="soon" >Soon</span>
       </div>
       <br>
       <br>
-      <div class="bottom-text" style="font-style: italic;">
+      <div class="bottom-text" >
         Pronto podréis explorar una experiencia completamente nueva y mejorada.
         <br>
         ¡Mantente atento para descubrir nuestras novedades!
