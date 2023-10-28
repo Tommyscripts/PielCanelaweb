@@ -29,9 +29,8 @@
 }
 .bottom-text {
   font-size: 6vh;
-  margin-top: 4em;
-  padding-left: 9em;
-  /* Ajusta el margen superior según tus preferencias */
+  margin-top: 1em;
+  padding-left: 1em;
 }
 .centered-text {
   text-align: center;
@@ -40,7 +39,9 @@
   justify-content: center;
   height: 100vh;
   font-family: 'Raleway', italic;
-  font-size: 3vh;
+  font-size: 5vh;
+  padding-left: 2em;
+  color: white;
 }
 
 .playfair-display {
