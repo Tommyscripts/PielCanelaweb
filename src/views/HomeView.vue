@@ -22,10 +22,7 @@
 
       <v-col cols="8">
         <TheWelcome />
-      </v-col>
-
-      <v-col class="mobile-icons" cols="4">
-        <IconosRedesSociales />
+        <IconosRedesSociales class="mobile-icons" />
       </v-col>
     </v-row>
 </template>
@@ -56,7 +53,8 @@ import IconosRedesSociales from '../components/IconosRedesSociales.vue';
 }
 
 .mobile-icons {
-  display: none;
+  flex-direction: row;
+  margin-top: 1rem;
 }
 
 .desktop-icons {
