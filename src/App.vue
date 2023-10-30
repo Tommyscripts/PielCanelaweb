@@ -44,6 +44,9 @@ export default {
 </script>
 
 <style scoped>
+body {
+  font-style: italic; /* Establece la cursiva para todas las fuentes */
+}
 .app {
   height: 100vh;
   width: 100vw;

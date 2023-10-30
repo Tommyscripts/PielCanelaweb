@@ -86,7 +86,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+/* Establece el color de los enlaces visitados en blanco */
+a:visited {
+  color: white;
+}
+
 .mover {
   margin-right: 8vh;
   color: white;

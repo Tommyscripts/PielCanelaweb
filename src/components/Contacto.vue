@@ -24,12 +24,14 @@
 </template>
 
 <style scoped>
+body {
+  font-style: italic;
+}
 .full-width {
   width: 100%;
 }
 .bottom-text {
   font-size: 6vh;
-  margin-top: 1em;
   padding-left: 1em;
 }
 .centered-text {
@@ -45,7 +47,8 @@
 
 .playfair-display {
   font-family: 'Playfair Display', serif;
-  font-style: italic;
+  font-weight: bold;
+  font-style: italic; /* Añade la cursiva a la fuente Playfair Display */
   font-size: 10vh;
   line-height: 1em;
   color: rgb(255, 255, 255);
@@ -61,7 +64,6 @@
   display: none;
   flex-direction: row;
   justify-content: center;
-  margin-top: 1rem;
 }
 
 @media (max-width: 800px) {
