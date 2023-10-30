@@ -12,6 +12,9 @@
 }
 
 .center-content {
+  font-family: 'Playfair Display', serif; /* Cambiado a 'serif' ya que 'Playfair Display' no tiene una variante italic */
+  font-weight: bold;
+  font-style: italic;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -55,8 +55,9 @@ body {
 }
 
 .playfair-display {
-  font-family: 'Playfair Display', serif; /* Cambiado a 'serif' ya que 'Playfair Display' no tiene una variante italic */
+  font-family: 'Playfair Display', italic; /* Cambiado a 'serif' ya que 'Playfair Display' no tiene una variante italic */
   font-weight: bold;
+  font-style: italic;
   font-size: 200px;
   line-height: 1em;
   color: rgb(255, 255, 255);
@@ -69,7 +70,7 @@ body {
 
 .playfair-display .soon {
   position: relative;
-  margin-left: -2.9em;
+  margin-left: -2.82em;
   top: 0.6em;
 }
 
