@@ -13,19 +13,18 @@
           <div class="horario">
             Lunes a viernes de 10am-8pm
           </div>
-         
         </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <style scoped>
-.caja1{
+.caja1 {
   margin-bottom: 10em;
   margin-right: 15em;
 }
+
 .mover {
   padding-left: 5em;
   font-size: 3em;
@@ -50,10 +49,12 @@
   font-family: 'Raleway', 'sherif';
   margin-left: 6em;
 }
-.numero{
+
+.numero {
   padding-left: 0.5em;
 }
-.horario{
+
+.horario {
   margin-top: 0.2em;
   padding-left: 1em;
 }
