@@ -2,7 +2,7 @@
   <div class="d-flex align-center text-center">
     <div class="centered-text">
       <div class="caja1">
-        <p class="mover">Contacto</p>
+        <p class="mover">CONTACTO</p>
         <br>
         <a class="email-link" href="mailto:hola@pielcaneladesign.com">hola@pielcaneladesign.com</a>
         <div class="bottom-text">
@@ -25,10 +25,11 @@
 }
 
 .mover {
-  padding-left: 13em;
+  padding-left: 19em;
   font-size: 1em;
   font-family: 'Raleway', 'sherif';
-  font-size: 1.5em;
+  font-style: normal;
+  font-size: 1em;
 }
 
 .email-link {
@@ -37,7 +38,6 @@
   color: inherit;
   cursor: pointer;
   font-family: 'Playfair Display', serif;
-  font-weight: bold;
   font-style: italic;
   margin-left: 4em;
 }
@@ -45,7 +45,6 @@
 .bottom-text {
   padding-left: 13em;
   font-size: 1em;
-  font-family: 'Raleway', 'sherif';
   font-size: 1.5em;
 }
 
@@ -59,6 +58,8 @@
 .horario {
   margin-top: 0.2em;
   padding-left: 1em;
+  font-family: 'Raleway', 'sherif';
+  font-style: normal;
 }
 
 .centered-text {
