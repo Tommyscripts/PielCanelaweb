@@ -6,7 +6,6 @@
         <br>
         <a class="email-link" href="mailto:hola@pielcaneladesign.com">hola@pielcaneladesign.com</a>
         <div class="bottom-text">
-          <br>
           <div class="numero">
             912516439
           </div>
@@ -26,10 +25,10 @@
 }
 
 .mover {
-  padding-left: 5em;
-  font-size: 3em;
+  padding-left: 13em;
+  font-size: 1em;
   font-family: 'Raleway', 'sherif';
-  margin-bottom: 1em;
+  font-size: 1.5em;
 }
 
 .email-link {
@@ -44,14 +43,17 @@
 }
 
 .bottom-text {
-  font-size: 3em;
-  margin-top: 0.5em;
+  padding-left: 13em;
+  font-size: 1em;
   font-family: 'Raleway', 'sherif';
-  margin-left: 6em;
+  font-size: 1.5em;
 }
 
 .numero {
+  font-family: 'Playfair Display', 'italic';
+  font-style: italic;
   padding-left: 0.5em;
+  font-size: 3em;
 }
 
 .horario {
