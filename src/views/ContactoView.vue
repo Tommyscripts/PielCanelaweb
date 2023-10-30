@@ -10,13 +10,14 @@
       <IconosRedesSociales />
     </v-col>
   </div>
+
   <v-row class="mobile-view">
       <v-col cols="4">
         <LogoPielCanela />
       </v-col>
 
       <v-col cols="8">
-        <TheWelcome />
+        <Contacto />
         <IconosRedesSociales class="mobile-icons" />
       </v-col>
     </v-row>
