@@ -2,17 +2,12 @@
   <div class="d-flex align-center text-center full-width">
     <div class="centered-text">
       <p class="mover">Contacto</p>
-      <div class="bottom-text">
         <a class="email-link" href="mailto:hola@pielcaneladesign.com">hola@pielcaneladesign.com</a>
+        <div class="bottom-text">
         <br>
         912516439
         <br>
         Lunes a viernes de 10am-8pm
-      </div>
-      <div class="mobile-icons">
-        <v-icon>mdi-facebook</v-icon>
-        <v-icon>mdi-twitter</v-icon>
-        <v-icon>mdi-instagram</v-icon>
       </div>
     </div>
   </div>
