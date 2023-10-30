@@ -1,15 +1,12 @@
 <template>
   <div class="d-flex align-center text-center full-width">
     <div class="centered-text">
-      <p class="mover" >Próximamente</p>
-
+      <p class="mover">Próximamente</p>
       <div class="playfair-display">
-        <span class="coming" >Coming</span>
-        <span class="soon" >Soon</span>
+        <span class="coming">Coming</span>
+        <span class="soon">Soon</span>
       </div>
-      
-     
-      <div class="bottom-text" >
+      <div class="bottom-text">
         Pronto podréis explorar una experiencia completamente nueva y mejorada.
         <br>
         ¡Mantente atento para descubrir nuestras novedades!
@@ -17,12 +14,11 @@
     </div>
   </div>
 </template>
-  
+
 <script>
-export default {
-};
+export default {};
 </script>
-  
+
 <style scoped>
 /* Establece el estilo cursiva para todas las fuentes */
 body {
@@ -32,8 +28,7 @@ body {
 .mover {
   padding-left: 3em;
   font-size: 1em;
-  font-family: 'Raleway', italic;
-  font-style: italic;
+  font-family: 'Raleway', 'sherif';
 }
 
 .full-width {
@@ -47,7 +42,7 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  font-family: 'Raleway', sans-serif; /* Cambiado a 'sans-serif' ya que 'Raleway' no tiene una variante italic */
+  font-family: 'Raleway', sans-serif;
   font-size: 3dvh;
   padding-right: 4em;
   color: white;
@@ -55,13 +50,13 @@ body {
 }
 
 .playfair-display {
-  font-family: 'Playfair Display', italic; /* Cambiado a 'serif' ya que 'Playfair Display' no tiene una variante italic */
+  font-family: 'Playfair Display', serif;
   font-weight: bold;
   font-style: italic;
   font-size: 200px;
   line-height: 1em;
   color: rgb(255, 255, 255);
-  letter-spacing: 0.02em; /* Ajusta el valor según tus preferencias */
+  letter-spacing: 0.02em;
 }
 
 .playfair-display .coming {
@@ -75,16 +70,43 @@ body {
 }
 
 .bottom-text {
-  margin-top: 4em;
+  margin-top: 5.2em;
   padding-left: 9em;
-  font-family: 'Raleway', italic;
-  font-style: italic;
+  font-family: 'Raleway', 'sherif';
 }
 
 /* Media query para pantallas con un ancho máximo de 800px (ajustado para dispositivos móviles) */
 @media (max-width: 800px) {
   .mover {
-    padding-left: 0;
+    padding-left: 6em;
+  }
+
+  .centered-text {
+    font-size: 2.5dvh; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    padding-right: 2em; /* Ajusta el margen derecho para dispositivos móviles */
+    padding-bottom: 3em; /* Ajusta el margen inferior para dispositivos móviles */
+  }
+
+  .playfair-display {
+    font-size: 150px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    letter-spacing: 0; /* Elimina el espaciado entre letras para dispositivos móviles */
+  }
+
+  .playfair-display .coming{
+    margin-left: 0; /* Restablece el margen izquierdo para dispositivos móviles */
+    top: 1; /* Restablece la posición superior para dispositivos móviles */
+    text-align: center; /* Centra el texto en dispositivos móviles */
+
+  };
+  .playfair-display .soon {
+    margin-left: 1; /* Restablece el margen izquierdo para dispositivos móviles */
+    top: 1; /* Restablece la posición superior para dispositivos móviles */
+    text-align: center; /* Centra el texto en dispositivos móviles */
+  }
+
+  .bottom-text {
+    margin-top: 6em; /* Ajusta el margen superior para dispositivos móviles */
+    padding-left: 5em; /* Ajusta el margen izquierdo para dispositivos móviles */
   }
 }
 </style>
