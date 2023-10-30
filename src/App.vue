@@ -4,19 +4,20 @@
       <Navbar @tab-change="changeTab" />
       <img src="./assets/slidemouse.gif" alt="GIF" class="global-gif" />
       <div class="content">
-        <div v-if="currentTab === 'tab1'">
+        <div v-if="currentTab === 'tab1'" :key="'tab1'">
           <TheWelcome />
         </div>
-        <div v-if="currentTab === 'tab2'">
+        <div v-if="currentTab === 'tab2'" :key="'tab2'">
           <Identidad />
         </div>
-        <div v-if="currentTab === 'tab3'">
+        <div v-if="currentTab === 'tab3'" :key="'tab3'">
           <Contacto />
         </div>
       </div>
     </div>
   </v-main>
 </template>
+
 
 <script>
 import Navbar from './components/nav-bar.vue';

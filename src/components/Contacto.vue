@@ -3,7 +3,6 @@
     <div class="centered-text">
       <div class="caja1">
         <p class="mover">CONTACTO</p>
-        <br>
         <a class="email-link" href="mailto:hola@pielcaneladesign.com">hola@pielcaneladesign.com</a>
         <div class="bottom-text">
           <div class="numero">
@@ -20,83 +19,81 @@
 
 <style scoped>
 .caja1 {
+ margin-left: 5em;
   margin-bottom: 10em;
-  margin-right: 15em;
+  margin-top: 10em;
 }
 
 .mover {
-  padding-left: 19em;
-  font-size: 1em;
+  padding-right: 2em;
   font-family: 'Raleway', 'sherif';
-  font-style: normal;
-  font-size: 1em;
+  font-size: 0.5em;
+  margin-top: 0; /* Agregado para ajustar el margen superior en dispositivos móviles */
 }
 
 .email-link {
-  font-size: 5em;
-  text-decoration: none;
-  color: inherit;
+  font-size: 4vh; /* Ajustado para dispositivos móviles */
+  margin-left: 0; /* Eliminado el margen izquierdo en dispositivos móviles */
+  padding-left: 0; /* Eliminado el margen izquierdo en dispositivos móviles */
+  font-size: 2em;
+  text-decoration: none; /* Corregido */
   cursor: pointer;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  margin-left: 4em;
+  font-family: 'Playfair Display', italic; /* Corregido */
+  color: white;
 }
 
 .bottom-text {
-  padding-left: 13em;
-  font-size: 1em;
-  font-size: 1.5em;
+  font-size: 0.8em;
+  margin-top: 1em; /* Ajustado para dispositivos móviles */
+  padding-left: 0; /* Eliminado el margen izquierdo en dispositivos móviles */
 }
 
 .numero {
-  font-family: 'Playfair Display', 'italic';
-  font-style: italic;
-  padding-left: 0.5em;
   font-size: 3em;
 }
 
 .horario {
+  font-size: 0.8em;
   margin-top: 0.2em;
   padding-left: 1em;
-  font-family: 'Raleway', 'sherif';
-  font-style: normal;
 }
 
 .centered-text {
+  justify-content: space-between;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vh;
   height: 100vh;
+  padding-right: 4em;
   color: white;
+  padding-bottom: 5em;
 }
 
 .mobile-icons {
-  display: none;
-  flex-direction: row;
-  justify-content: center;
+  display: none; /* Asegúrate de controlar la visibilidad de los elementos en dispositivos móviles adecuadamente */
 }
 
 /* Media query para pantallas con un ancho máximo de 800px (ajustado para dispositivos móviles) */
 @media (max-width: 800px) {
   .mover {
-    padding-left: 0;
-    font-size: 3vh;
+    padding-left: 6em;
+  }
+
+  .centered-text {
+    font-size: 2.5vh;
     /* Ajusta el tamaño de fuente para dispositivos móviles */
+    padding-right: 2em;
+    /* Ajusta el margen derecho para dispositivos móviles */
+    padding-bottom: 3em;
+    /* Ajusta el margen inferior para dispositivos móviles */
   }
 
   .bottom-text {
-    font-size: 4vh;
-    /* Ajusta el tamaño de fuente para dispositivos móviles */
+    margin-top: 6em;
+    /* Ajusta el margen superior para dispositivos móviles */
   }
-
-  .email-link {
-    font-size: 4vh;
-    /* Ajusta el tamaño de fuente para dispositivos móviles */
-  }
-
-  .mobile-icons {
-    display: flex;
-    flex-direction: column;
-  }
-}</style>
+}
+</style>

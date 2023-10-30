@@ -1,17 +1,21 @@
 <template>
+  <!-- Vista de PC -->
   <div class="d-flex tamano">
-    <v-col cols="12" md="2">
-      <LogoPielCanela class="logo-left" />
+    <v-col cols="2" md="2">
+      <LogoPielCanela />
     </v-col>
-    <v-col cols="12" md="8">
-      <Contacto />
+    <v-col cols="8" md="4">
+      <div class="caja1">
+        <Contacto />
+      </div>
     </v-col>
-    <v-col cols="12" md="2">
+    <v-col cols="2" md="2">
       <IconosRedesSociales />
     </v-col>
   </div>
 
-  <v-row class="mobile-view">
+  <!-- Vista de móvil -->
+    <v-row class="mobile-view">
       <v-col cols="4">
         <LogoPielCanela />
       </v-col>
