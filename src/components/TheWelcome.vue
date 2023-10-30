@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-center text-center full-width">
+  <div class="d-flex align-center text-center">
     <div class="centered-text">
       <p class="mover">Próximamente</p>
       <div class="playfair-display">
@@ -31,9 +31,6 @@ body {
   font-family: 'Raleway', 'sherif';
 }
 
-.full-width {
-  width: 100%;
-}
 
 .centered-text {
   justify-content: space-between;
