@@ -33,6 +33,7 @@ body {
 .bottom-text {
   font-size: 6vh;
   padding-left: 1em;
+  font-family: 'Raleway', sans-serif; /* Cambiado a 'sans-serif' para utilizar Raleway en su estilo regular */
 }
 .centered-text {
   text-align: center;
@@ -40,15 +41,15 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  font-family: 'Raleway', italic;
+  font-family: 'Raleway', sans-serif; /* Cambiado a 'sans-serif' para utilizar Raleway en su estilo regular */
   font-size: 5vh;
   color: white;
 }
 
 .playfair-display {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', italic;
   font-weight: bold;
-  font-style: italic; /* Añade la cursiva a la fuente Playfair Display */
+  font-style: italic;
   font-size: 10vh;
   line-height: 1em;
   color: rgb(255, 255, 255);
