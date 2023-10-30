@@ -18,7 +18,7 @@
 
       <v-col cols="8">
         <Identidad />
-        <IconosRedesSociales2 class="mobile-icons" />
+        <IconosRedesSociales class="mobile-icons" />
       </v-col>
     </v-row>
 

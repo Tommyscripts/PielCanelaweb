@@ -23,7 +23,7 @@ export default {};
 
 <style scoped>
 .caja1{
-  padding-right: 2em;
+  padding-left: 1em;
 }
 
 .mover {

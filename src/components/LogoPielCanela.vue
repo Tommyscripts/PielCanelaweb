@@ -9,6 +9,6 @@ import Logo from './icons/pielcanela_rebranding-07.png'
 </script>
 <style>
 .p{
-  padding-left: 5vh;
+  padding-left: 7vh;
 }
 </style>

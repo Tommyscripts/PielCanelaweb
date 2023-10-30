@@ -93,7 +93,7 @@ a:visited {
 }
 
 .mover {
-  margin-right: 8vh;
+  margin-right: 9vh;
   color: white;
 }
 </style>
