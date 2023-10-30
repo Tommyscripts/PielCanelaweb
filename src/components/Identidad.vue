@@ -8,6 +8,7 @@
 .palabra {
   height: auto;
   width: 50%;
+  padding-bottom: 5rem;
 }
 
 .center-content {
