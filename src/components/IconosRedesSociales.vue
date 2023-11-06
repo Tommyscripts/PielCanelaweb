@@ -4,7 +4,7 @@
       <v-col class="icon-col">
         <v-btn>
           <a href="https://www.instagram.com" target="_blank">
-            <svg-icon type="mdi" :path="instagram"></svg-icon>
+            <svg-icon type="mdi" :path="instagram" style="font-size: 32px; margin: 10px;"></svg-icon>
           </a>
         </v-btn>
         <br>
@@ -15,7 +15,7 @@
       <v-col class="icon-col">
         <v-btn>
           <a href="https://www.linkedin.com" target="_blank">
-            <svg-icon type="mdi" :path="linkedin"></svg-icon>
+            <svg-icon type="mdi" :path="linkedin" style="font-size: 32px; margin: 10px;"></svg-icon>
           </a>
         </v-btn>
         <br>
@@ -27,7 +27,7 @@
       <v-col class="icon-col">
         <v-btn>
           <a href="https://www.facebook.com" target="_blank">
-            <svg-icon type="mdi" :path="facebook"></svg-icon>
+            <svg-icon type="mdi" :path="facebook" style="font-size: 32px; margin: 10px;"></svg-icon>
           </a>
         </v-btn>
         <br>
@@ -39,8 +39,7 @@
       <v-col class="icon-col">
         <v-btn>
           <a :href="getWhatsAppLink()" target="_blank">
-            <svg-icon type="mdi" :path="whatsapp"></svg-icon>
-
+            <svg-icon type="mdi" :path="whatsapp" style="font-size: 32px; margin: 10px;"></svg-icon>
           </a>
         </v-btn>
       </v-col>
@@ -89,7 +88,7 @@ export default {
 <style scoped>
 /* Establece el color de los enlaces visitados en blanco */
 a:visited {
-  color: white;
+  color: white !important;
 }
 
 .mover {

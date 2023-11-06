@@ -1,7 +1,7 @@
 <template>
   <!-- Vista de PC -->
   <div class="d-flex tamano">
-    <v-col cols="2" md="2">
+    <v-col class="logo" cols="2" md="2">
       <LogoPielCanela />
     </v-col>
     <v-col cols="8" md="4">
@@ -9,7 +9,7 @@
         <Contacto />
       </div>
     </v-col>
-    <v-col cols="2" md="2">
+    <v-col class="redes" cols="2" md="2">
       <IconosRedesSociales />
     </v-col>
   </div>
@@ -34,6 +34,12 @@ import IconosRedesSociales from '../components/IconosRedesSociales.vue';
 </script>
 
 <style scoped>
+.logo{
+margin-bottom: 10vh;
+}
+.redes{
+  margin-bottom: 10vh;
+}
 .tamano {
   height: 100%;
   width: 100%;
