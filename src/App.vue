@@ -63,7 +63,7 @@ export default {
 .global-gif {
   position: fixed;
   bottom: 2.8rem; /* Ajusta la distancia desde la parte inferior */
-  left: 50%;
+  left: 51%;
   transform: translateX(-50%);
   width: 4vh; /* Ajusta el tamaño del GIF según tus preferencias */
 }
