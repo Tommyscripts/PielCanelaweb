@@ -60,6 +60,6 @@ export default {
 .content {
   padding: 20px;
   height: 100%;
-  /* Asegura que el contenido ocupe la pantalla completa */
   width: 100%;
-}</style>
+}
+</style>

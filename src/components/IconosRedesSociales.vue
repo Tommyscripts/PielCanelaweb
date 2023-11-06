@@ -95,4 +95,11 @@ a:visited {
   margin-right: 9vh;
   color: white;
 }
+
+@media screen and (max-width: 800px) {
+  .icon-col {
+    display: inline-block;  /* Cambia la visualización a línea en dispositivos pequeños */
+    margin-right: 10px;     /* Agrega un margen entre los iconos */
+  }
+}
 </style>

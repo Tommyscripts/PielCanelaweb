@@ -19,7 +19,7 @@
 
 <style scoped>
 .caja1 {
- margin-left: 5em;
+  margin-left: 5em;
   margin-bottom: 10em;
   margin-top: 10em;
 }
@@ -35,21 +35,23 @@
   font-size: 4vh; /* Ajustado para dispositivos móviles */
   margin-left: 0; /* Eliminado el margen izquierdo en dispositivos móviles */
   padding-left: 0; /* Eliminado el margen izquierdo en dispositivos móviles */
-  font-size: 2em;
+  font-size: 3em;
   text-decoration: none; /* Corregido */
   cursor: pointer;
   font-family: 'Playfair Display', italic; /* Corregido */
+  font-style: italic;
   color: white;
 }
 
 .bottom-text {
   font-size: 0.8em;
-  margin-top: 1em; /* Ajustado para dispositivos móviles */
-  padding-left: 0; /* Eliminado el margen izquierdo en dispositivos móviles */
+  padding-top: 0em;
 }
 
 .numero {
-  font-size: 3em;
+  font-size: 3.5em;
+  font-family: 'Playfair Display', italic; /* Corregido */
+  font-style: italic;
 }
 
 .horario {

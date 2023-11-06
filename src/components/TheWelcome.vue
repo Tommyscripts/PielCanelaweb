@@ -2,7 +2,7 @@
   <div class="d-flex align-center text-center">
     <div class="centered-text">
       <div class="caja1">
-        <p class="mover">Próximamente</p>
+        <p class="mover">PRÒXIMAMENTE</p>
         <div class="playfair-display">
           <span class="coming">Coming</span>
           <span class="soon">Soon</span>
