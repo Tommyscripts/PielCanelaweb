@@ -36,7 +36,7 @@ export default {};
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   font-style: italic;
-  font-size: 250px;
+  font-size: 200px;
   line-height: 1em;
   color: rgb(255, 255, 255);
   letter-spacing: 0.02em;
